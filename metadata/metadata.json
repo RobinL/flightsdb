@@ -2,7 +2,7 @@
     "id": "flights.flightsdata",
     "table_desc": "Flights data from http://stat-computing.org/dataexpo/2009/the-data.html",
     "table_name": "flightsdata",
-    "data_format": "csv_quoted_nodate",
+    "data_format": "csv",
     "location": "s3://robintest-gluenotebooks3files/flights",
     "glue_specific": {
         "PartitionKeys": [
