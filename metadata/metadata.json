@@ -1,0 +1,162 @@
+{
+    "id": "flights.flightsdata",
+    "table_desc": "Flights data from http://stat-computing.org/dataexpo/2009/the-data.html",
+    "table_name": "flightsdata",
+    "data_format": "csv_quoted_nodate",
+    "location": "s3://robintest-gluenotebooks3files/flights",
+    "glue_specific": {
+        "PartitionKeys": [
+            {
+                "Name": "file",
+                "Type": "string"
+            }
+        ]
+    },
+    "columns": [
+        {
+            "name": "year",
+            "description": "1987-2008",
+            "type": "character"
+        },
+        {
+            "name": "month",
+            "description": "1-12",
+            "type": "character"
+        },
+        {
+            "name": "dayofmonth",
+            "description": "1-31",
+            "type": "character"
+        },
+        {
+            "name": "dayofweek",
+            "description": "1 (Monday) - 7 (Sunday)",
+            "type": "character"
+        },
+        {
+            "name": "deptime",
+            "description": "actual departure time (local, hhmm)",
+            "type": "character"
+        },
+        {
+            "name": "crsdeptime",
+            "description": "scheduled departure time (local, hhmm)",
+            "type": "character"
+        },
+        {
+            "name": "arrtime",
+            "description": "actual arrival time (local, hhmm)",
+            "type": "character"
+        },
+        {
+            "name": "crsarrtime",
+            "description": "scheduled arrival time (local, hhmm)",
+            "type": "character"
+        },
+        {
+            "name": "uniquecarrier",
+            "description": "unique carrier code",
+            "type": "character"
+        },
+        {
+            "name": "flightnum",
+            "description": "flight number",
+            "type": "character"
+        },
+        {
+            "name": "tailnum",
+            "description": "plane tail number",
+            "type": "character"
+        },
+        {
+            "name": "actualelapsedtime",
+            "description": "in minutes",
+            "type": "character"
+        },
+        {
+            "name": "crselapsedtime",
+            "description": "in minutes",
+            "type": "character"
+        },
+        {
+            "name": "airtime",
+            "description": "in minutes",
+            "type": "character"
+        },
+        {
+            "name": "arrdelay",
+            "description": "arrival delay, in minutes",
+            "type": "character"
+        },
+        {
+            "name": "depdelay",
+            "description": "departure delay, in minutes",
+            "type": "character"
+        },
+        {
+            "name": "origin",
+            "description": "origin IATA airport code",
+            "type": "character"
+        },
+        {
+            "name": "dest",
+            "description": "destination IATA airport code",
+            "type": "character"
+        },
+        {
+            "name": "distance",
+            "description": "in miles",
+            "type": "character"
+        },
+        {
+            "name": "taxiin",
+            "description": "taxi in time, in minutes",
+            "type": "character"
+        },
+        {
+            "name": "taxiout",
+            "description": "taxi out time in minutes",
+            "type": "character"
+        },
+        {
+            "name": "cancelled",
+            "description": "was the flight cancelled?",
+            "type": "character"
+        },
+        {
+            "name": "cancellationcode",
+            "description": "reason for cancellation (A = carrier, B = weather, C = NAS, D = security)",
+            "type": "character"
+        },
+        {
+            "name": "diverted",
+            "description": "1 = yes, 0 = no",
+            "type": "character"
+        },
+        {
+            "name": "carrierdelay",
+            "description": "in minutes",
+            "type": "character"
+        },
+        {
+            "name": "weatherdelay",
+            "description": "in minutes",
+            "type": "character"
+        },
+        {
+            "name": "nasdelay",
+            "description": "in minutes",
+            "type": "character"
+        },
+        {
+            "name": "securitydelay",
+            "description": "in minutes",
+            "type": "character"
+        },
+        {
+            "name": "lateaircraftdelay",
+            "description": "in minutes",
+            "type": "character"
+        }
+    ]
+}
